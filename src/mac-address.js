@@ -23,9 +23,6 @@ function isMAC48Address( n ) {
   return counter === 6;
 };
 
-console.log(isMAC48Address('00-1B-63-84-45-E6'))
-// console.log(parseInt('G0', 16))
-
 module.exports = {
   isMAC48Address
 };
