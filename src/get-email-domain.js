@@ -15,8 +15,6 @@ function getEmailDomain( email ) {
   return email.substring(email.lastIndexOf('@') + 1);
 }
 
-console.log(getEmailDomain('very.unusual.@.unusual.com@usual.com'))
-
 module.exports = {
   getEmailDomain
 };

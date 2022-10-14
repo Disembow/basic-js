@@ -32,8 +32,6 @@ function encodeLine( str ) {
   return result;
 }
 
-console.log(encodeLine('abbcca'));
-
 module.exports = {
   encodeLine
 };
