@@ -3,6 +3,7 @@ const { NotImplementedError } = require('../extensions/index.js');
 /**
  * Implement chainMaker object according to task description
  */
+
 const chainMaker = {
   arr: [],
   getLength() {
@@ -33,11 +34,6 @@ const chainMaker = {
     return str;
   }
 };
-
-
-// console.log(chainMaker.addLink('GHI').addLink(null).reverseChain().addLink(333).reverseChain().reverseChain().addLink(0).reverseChain().reverseChain().addLink('GHI').finishChain())
-// '( null )~~( GHI )~~( 333 )~~( 0 )~~( GHI )'
-// console.log(chainMaker.addLink(1).addLink(2).addLink(3).removeLink(0).finishChain());
 
 module.exports = {
   chainMaker

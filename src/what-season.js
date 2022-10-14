@@ -34,6 +34,7 @@ function getSeason(date) {
   };
 };
 
+
 module.exports = {
   getSeason
 };

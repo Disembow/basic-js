@@ -15,6 +15,7 @@ const { NotImplementedError } = require('../extensions/index.js');
  * => 'STRINGPLUS00PLUS00PLUS**STRINGPLUS00PLUS00PLUS**STRINGPLUS00PLUS00PLUS'
  *
  */
+
 function repeater( str, options ) {
   let res = '';
   options.separator ? '' : options.separator = '+';
@@ -33,8 +34,6 @@ function repeater( str, options ) {
   }
   return res;
 }
-
-console.log(repeater('la', { repeatTimes: 3 }))
 
 module.exports = {
   repeater

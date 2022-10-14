@@ -14,6 +14,7 @@ const { NotImplementedError } = require('../extensions/index.js');
  * ]) => 3`
  *
  */
+
  function countCats(arr) {
   let counter = 0;
   arr = arr.flat();

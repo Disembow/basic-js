@@ -25,9 +25,6 @@ function dateSample(sampleActivity) {
   }
 }
 
-console.log(dateSample('3'))
-// console.log(typeof '3')
-
 module.exports = {
   dateSample
 };
