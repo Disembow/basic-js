@@ -20,14 +20,11 @@ function renameFiles( names ) {
   let obj = {};
   for (let i = 1; i < names.length; i++) {
     let arr = names.slice(0, i);
-    // console.log(arr);
     if (arr.includes(names[i])) {
       obj[names[i]] ? obj[names[i]] += 1 : obj[names[i]] = 1;
       names[i] = names[i] + `(${obj[names[i]]})`
-      // console.log(names[i]);
     };
   };
-  console.log(obj);
   return names;
 }
 
