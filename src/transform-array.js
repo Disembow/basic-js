@@ -18,7 +18,6 @@ function transform( arr ) {
   if (!Array.isArray(arr)) {
     throw new Error ("'arr' parameter must be an instance of the Array!");
   };
-  arr = [...arr];
   let result = [];
   for (i = 0; i < arr.length; i++) {
     if (arr[i] !== '--discard-next' && arr[i] !== '--discard-prev' && arr[i] !== '--double-next' && arr[i] !== '--double-prev') {
@@ -32,7 +31,7 @@ function transform( arr ) {
   }
   result[0] === undefined ? result.shift() : '';
   return result;
-}
+};
 
 module.exports = {
   transform
